@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".Functions.MarksSheet">
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/dropdownview2"
+        app:ms_dropdown_max_height="500dp"
+        android:background="#960808"
+        android:layout_gravity="center"
+        app:ms_background_color="#fff"
+        app:ms_hint="Select Exam"
+        app:ms_hint_color="#B03F7CE6"
+        app:ms_text_color="#1F37CE"
+
+        app:ms_dropdown_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="45dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/marksSheetRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
